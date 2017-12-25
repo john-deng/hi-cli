@@ -143,7 +143,8 @@ function main() {
         else
             ensure_environment "${profile}"
         fi
-
+        
+        mkdir -p /usr/local/bin
         ln -sf "${HI_CLI_HOME}/bin/hi" "/usr/local/bin/hi"
         ln -sf "${HI_CLI_HOME}/bin/hi-all" "/usr/local/bin/hi-all"
         ln -sf "${HI_CLI_HOME}/bin/hpm" "/usr/local/bin/hpm"
